@@ -33,6 +33,9 @@ export default <Partial<Config>>{
           950: "var(--p-surface-950)",
         },
       },
+      fontFamily: {
+        sans: ["Noto Sans Thai", "sans-serif"],
+      },
     },
   },
   darkMode: "class",
