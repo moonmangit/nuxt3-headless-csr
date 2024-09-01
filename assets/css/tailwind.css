@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+:root {
+  --modal-z-index: 40;
+
+  /* backdrop */
+  --backdrop-color: rgba(0, 0, 0, 0.6);
+}
+>>>>>>> parent of bc28b95 (add : loading and general plugin)
