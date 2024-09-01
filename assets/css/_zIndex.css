@@ -1,3 +1,0 @@
-.z-index--modal {
-  @apply z-[var(--modal-z-index)];
-}
