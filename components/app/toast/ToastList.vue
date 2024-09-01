@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="z-[var(--toast-z-index)]">
     <li v-for="ctn in contents" :key="ctn.id">
       <AppToastItem
         :content="ctn"
