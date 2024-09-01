@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { preset } from "./assets/src/primevue/preset";
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
@@ -8,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/icon",
     "@pinia/nuxt",
+    "@primevue/nuxt-module",
   ],
   components: {
     dirs: [
@@ -21,6 +23,19 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       "Noto Sans Thai": [400, 700, 900],
+    },
+  },
+  primevue: {
+    options: {
+      ripple: true,
+      inputVariant: "filled",
+      theme: {
+        preset,
+        options: {
+          prefix: "p",
+          darkModeSelector: ".dark",
+        },
+      },
     },
   },
 });

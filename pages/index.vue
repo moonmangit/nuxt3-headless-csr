@@ -1,7 +1,13 @@
 <template>
-  <div>welcome</div>
+  <div>
+    <Button label="hello" @click.prevent="toggleDarkMode" />
+  </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+function toggleDarkMode() {
+  document.documentElement.classList.toggle("dark");
+}
+</script>
 
 <style></style>
